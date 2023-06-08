@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link id="cd-base-part-1" rel="stylesheet" href="/src/assets/css/style.css">
+  <link id="codyframe" rel="stylesheet" href="/src/assets/css/wizard-form.css">
+
+  <script>
+    if (!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) { var cfStyle = document.getElementById('codyframe'); if (cfStyle) { var href = cfStyle.getAttribute('href'); href = href.replace('wizard-form.css', 'wizard-form-ie.css'); cfStyle.setAttribute('href', href); } }
+  </script>
+</head>
+
+<body>
+  <div class="js-cd-demo">
+    <form class="wiz-form bg height-100vh js-wiz-form">
+      <div class="wiz-form__body">
+        <fieldset class="wiz-form__step js-wiz-form__step">
+          <div class="container max-width-xs">
+            <header class="padding-top-md">
+              <p class="text-sm color-contrast-medium line-height-xs">Step 1 <span class="hide@md">of 3</span></p>
+              <h1 class="text-xl">Account Info</h1>
+            </header>
+            <div class="padding-y-md">
+              <div class="margin-bottom-md">
+                <div class="flex flex-wrap gap-sm items-center"><img class="block width-xxl height-xxl radius-50%"
+                    src="../../../app/assets/img/wiz-form-img-5.jpg" alt="Profile picture">
+                  <div>
+                    <div class="flex flex-column gap-xs flex-row@xs">
+                      <div class="file-upload inline-block text-sm"><label for="upload1"
+                          class="file-upload__label btn btn--subtle height-100%"><span
+                            class="file-upload__text file-upload__text--has-max-width">Upload new picture</span></label>
+                        <input type="file" class="file-upload__input" name="upload1" id="upload1"></div><button
+                        class="btn text-sm btn--subtle">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid gap-sm">
+                <div class="col-6@md"><label class="form-label margin-bottom-xxs" for="input-name">Name</label> <input
+                    class="form-control width-100%" type="text" name="input-name" id="input-name" required></div>
+                <div class="col-6@md"><label class="form-label margin-bottom-xxs" for="input-email">Email</label> <input
+                    class="form-control width-100%" type="email" name="input-email" id="input-email"></div>
+                <div>
+                  <div class="password-strength flex flex-column-reverse gap-xxs js-password-strength">
+                    <div>
+                      <p class="sr-only">Password requirements:</p>
+                      <ul class="text-sm">
+                        <li class="password-strength__req js-password-strength__req" data-password-req="length:6"><svg
+                            class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                            <g class="password-strength__icon-group" fill="none" stroke="currentColor"
+                              stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+                              <line x1="-6" y1="8" x2="8" y2="8" />
+                              <line x1="8" y1="8" x2="22" y2="8" />
+                            </g>
+                          </svg> <span>At least six characters</span></li>
+                        <li class="password-strength__req js-password-strength__req" data-password-req="special"><svg
+                            class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                            <g class="password-strength__icon-group" fill="none" stroke="currentColor"
+                              stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+                              <line x1="-6" y1="8" x2="8" y2="8" />
+                              <line x1="8" y1="8" x2="22" y2="8" />
+                            </g>
+                          </svg> <span>At least one special character</span></li>
+                        <li class="password-strength__req js-password-strength__req" data-password-req="uppercase"><svg
+                            class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                            <g class="password-strength__icon-group" fill="none" stroke="currentColor"
+                              stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+                              <line x1="-6" y1="8" x2="8" y2="8" />
+                              <line x1="8" y1="8" x2="22" y2="8" />
+                            </g>
+                          </svg> <span>At least one uppercase character</span></li>
+                      </ul>
+                    </div>
+                    <div> <label class="form-label margin-bottom-xxs" for="input-password">Password</label>
+                      <div class="password js-password"><input
+                          class="password__input form-control width-100% js-password-strength__input js-password__input"
+                          type="password" name="input-password" id="input-password"> <button
+                          class="password__btn flex flex-center js-password__btn js-tab-focus"><span
+                            class="password__btn-label" aria-label="Show password" title="Show password"><svg
+                              class="icon block" viewBox="0 0 32 32">
+                              <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" stroke="currentColor"
+                                fill="none">
+                                <path
+                                  d="M1.409,17.182a1.936,1.936,0,0,1-.008-2.37C3.422,12.162,8.886,6,16,6c7.02,0,12.536,6.158,14.585,8.81a1.937,1.937,0,0,1,0,2.38C28.536,19.842,23.02,26,16,26S3.453,19.828,1.409,17.182Z"
+                                  stroke-miterlimit="10"></path>
+                                <circle cx="16" cy="16" r="6" stroke-miterlimit="10"></circle>
+                              </g>
+                            </svg></span><span class="password__btn-label" aria-label="Hide password"
+                            title="Hide password"><svg class="icon block" viewBox="0 0 32 32">
+                              <g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" stroke="currentColor"
+                                fill="none">
+                                <path data-cap="butt"
+                                  d="M8.373,23.627a27.659,27.659,0,0,1-6.958-6.445,1.938,1.938,0,0,1-.008-2.37C3.428,12.162,8.892,6,16.006,6a14.545,14.545,0,0,1,7.626,2.368"
+                                  stroke-miterlimit="10" stroke-linecap="butt"></path>
+                                <path
+                                  d="M27,10.923a30.256,30.256,0,0,1,3.591,3.887,1.937,1.937,0,0,1,0,2.38C28.542,19.842,23.026,26,16.006,26A12.843,12.843,0,0,1,12,25.341"
+                                  stroke-miterlimit="10"></path>
+                                <path data-cap="butt" d="M11.764,20.243a6,6,0,0,1,8.482-8.489" stroke-miterlimit="10"
+                                  stroke-linecap="butt"></path>
+                                <path d="M21.923,15a6.005,6.005,0,0,1-5.917,7A6.061,6.061,0,0,1,15,21.916"
+                                  stroke-miterlimit="10"></path>
+                                <line x1="2" y1="30" x2="30" y2="2" fill="none" stroke-miterlimit="10"></line>
+                              </g>
+                            </svg></span></button></div>
+                      <div class="margin-top-xxs js-password-strength__meter-wrapper">
+                        <div class="grid gap-xxs text-sm items-center">
+                          <div class="password-strength__meter col-6@xs bg-contrast-lower js-password-strength__meter"
+                            min="0" max="4" value="0" aria-hidden="true"><span class="block height-100%"></span></div>
+                          <p class="col-6@xs text-right@xs color-contrast-medium" aria-live="polite" aria-atomic="true">
+                            Password strength: <span class="color-contrast-high js-password-strength__value"></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="wiz-form__step wiz-form__step--next js-wiz-form__step">
+          <div class="container max-width-xs">
+            <header class="padding-top-md">
+              <p class="text-sm color-contrast-medium line-height-xs">Step 2 <span class="hide@md">of 3</span></p>
+              <h1 class="text-xl">Product</h1>
+            </header>
+            <div class="padding-y-md">
+              <p class="margin-bottom-sm">Select a product:</p>
+              <div class="grid gap-sm js-choice-imgs" role="radiogroup">
+                <div class="choice-img bg-light radius-md col-6@xs js-choice-img js-tab-focus" role="radio"
+                  aria-checked="true" tabindex="0" aria-label="Product One">
+                  <figure class="aspect-ratio-4:3"><img class="block width-100%"
+                      src="../../../app/assets/img/wiz-form-img-1.jpg" alt="Image description"></figure>
+                  <div class="padding-sm text-component">
+                    <h4 class="text-base">Product One</h4>
+                    <p class="text-sm color-contrast-medium">Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                  <div class="choice-img__input" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16">
+                      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" d="M2 8l4 4 8-8" />
+                    </svg></div>
+                </div>
+                <div class="choice-img bg-light radius-md col-6@xs js-choice-img js-tab-focus" role="radio"
+                  aria-checked="false" tabindex="0" aria-label="Product Two">
+                  <figure class="aspect-ratio-4:3"><img class="block width-100%"
+                      src="../../../app/assets/img/wiz-form-img-2.jpg" alt="Image description"></figure>
+                  <div class="padding-sm text-component">
+                    <h4 class="text-base">Product Two</h4>
+                    <p class="text-sm color-contrast-medium">Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                  <div class="choice-img__input" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16">
+                      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" d="M2 8l4 4 8-8" />
+                    </svg></div>
+                </div>
+                <div class="choice-img bg-light radius-md col-6@xs js-choice-img js-tab-focus" role="radio"
+                  aria-checked="false" tabindex="0" aria-label="Product Three">
+                  <figure class="aspect-ratio-4:3"><img class="block width-100%"
+                      src="../../../app/assets/img/wiz-form-img-3.jpg" alt="Image description"></figure>
+                  <div class="padding-sm text-component">
+                    <h4 class="text-base">Product Three</h4>
+                    <p class="text-sm color-contrast-medium">Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                  <div class="choice-img__input" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16">
+                      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" d="M2 8l4 4 8-8" />
+                    </svg></div>
+                </div>
+                <div class="choice-img bg-light radius-md col-6@xs js-choice-img js-tab-focus" role="radio"
+                  aria-checked="false" tabindex="0" aria-label="Product Four">
+                  <figure class="aspect-ratio-4:3"><img class="block width-100%"
+                      src="../../../app/assets/img/wiz-form-img-4.jpg" alt="Image description"></figure>
+                  <div class="padding-sm text-component">
+                    <h4 class="text-base">Product Four</h4>
+                    <p class="text-sm color-contrast-medium">Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                  <div class="choice-img__input" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16">
+                      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" d="M2 8l4 4 8-8" />
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="wiz-form__step wiz-form__step--next js-wiz-form__step">
+          <div class="container max-width-xs">
+            <header class="padding-top-md">
+              <p class="text-sm color-contrast-medium line-height-xs">Step 3 <span class="hide@md">of 3</span></p>
+              <h1 class="text-xl">Contact</h1>
+            </header>
+            <div class="padding-y-md">
+              <p class="margin-bottom-sm">Select a contact method:</p>
+              <div class="choice-btns flex flex-column gap-xxs js-choice-btns">
+                <div class="choice-btn padding-sm js-choice-btn">
+                  <div class="choice-btn__fallback"><input type="checkbox" id="wiz-contact-check-button-1"
+                      checked="checked"> <label for="wiz-contact-check-button-1">Phone call</label></div>
+                  <div class="choice-btn__grid" aria-hidden="true">
+                    <div class="choice-btn__input choice-btn__input--checkbox"><svg class="icon" viewBox="0 0 16 16">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" d="M2 8l4 4 8-8" />
+                      </svg></div>
+                    <p class="color-contrast-higher font-bold">Phone call</p>
+                  </div>
+                </div>
+                <div class="choice-btn padding-sm js-choice-btn">
+                  <div class="choice-btn__fallback"><input type="checkbox" id="wiz-contact-check-button-1"> <label
+                      for="wiz-contact-check-button-1">Video call</label></div>
+                  <div class="choice-btn__grid" aria-hidden="true">
+                    <div class="choice-btn__input choice-btn__input--checkbox"><svg class="icon" viewBox="0 0 16 16">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" d="M2 8l4 4 8-8" />
+                      </svg></div>
+                    <p class="color-contrast-higher font-bold">Video call</p>
+                  </div>
+                </div>
+                <div class="choice-btn padding-sm js-choice-btn">
+                  <div class="choice-btn__fallback"><input type="checkbox" id="wiz-contact-check-button-1"> <label
+                      for="wiz-contact-check-button-1">Email</label></div>
+                  <div class="choice-btn__grid" aria-hidden="true">
+                    <div class="choice-btn__input choice-btn__input--checkbox"><svg class="icon" viewBox="0 0 16 16">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" d="M2 8l4 4 8-8" />
+                      </svg></div>
+                    <p class="color-contrast-higher font-bold">Email</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <footer class="wiz-form__footer bg-light padding-y-sm shadow-md">
+        <div class="container">
+          <div class="grid gap-sm items-center">
+            <div class="flex col col-3@md"><a class="btn btn--subtle flex-grow flex-grow-0@md js-wiz-form__prev"
+                href="#0">&larr; Back</a></div>
+            <div class="display@md col-6@md">
+              <div class="steps-v2 max-width-xs margin-x-auto js-wiz-form__step-indicator"
+                style="--step-v2-current-step: 1;">
+                <p class="text-sm color-contrast-medium margin-bottom-xs">Step <span
+                    class="js-wiz-form__current-step">1</span> of <span class="js-wiz-form__tot-steps">3</span></p>
+                <div class="steps-v2__indicator" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="flex justify-end@md col col-3@md"> <a
+                class="btn btn--primary flex-grow flex-grow-0@md js-wiz-form__next" href="#0">Next &rarr;</a> <button
+                class="btn btn--primary flex-grow flex-grow-0@md js-wiz-form__submit"><svg
+                  class="icon icon--xs margin-right-xxs" viewBox="0 0 12 12">
+                  <title>check</title>
+                  <polyline points="0.5 7.5 3.5 10.5 11.5 1.5" fill="none" stroke="currentColor" stroke-width="1"
+                    stroke-linecap="round" stroke-linejoin="round"></polyline>
+                </svg> <span>Submit</span></button></div>
+          </div>
+        </div>
+      </footer>
+    </form>
+  </div>
+  <script src="assets/js/util.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
+  <script src="assets/js/wizard-form.min.js"></script>
+
+  <script>
+    var wizardForm = document.getElementsByClassName('js-wiz-form');
+    if (wizardForm.length > 0) {
+      new WizardForm(wizardForm[0]);
+      wizardForm[0].addEventListener('submit', function (event) {
+        event.preventDefault();
+      });
+    }
+  </script>
+</body>
+
+</html>
